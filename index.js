@@ -27,6 +27,11 @@ if(scoreComp){
 }
 let countComp = 0;
 
+rulBtn.addEventListener("click", () => {
+    console.log("button Click");
+    ruleModal.style.display = "block";
+});
+
 function toggleButtons(showRuleButton, showNextButton) {
     if (showRuleButton) {
         rulBtn.style.display = "block";
@@ -66,8 +71,9 @@ con.forEach((element, index) =>[
                 computer[random].classList.add("right");
                 
 
-
+                console.log("1");
             }, 1000);
+            
             setTimeout(() => {
                 if(random == index){
                     winModal.style.display = "grid";
@@ -99,7 +105,9 @@ con.forEach((element, index) =>[
                     toggleButtons(true, false);
 
                 }
+                console.log("1");
             }, 1500);
+            console.log("1");
         }, 500);
     })
 ]);
@@ -108,11 +116,14 @@ play.addEventListener("click", ()=>{
     window.location.reload();
 });
 
-rulBtn.addEventListener("click", ()=>{
-    setTimeout(() => {
-        ruleModal.style.display = "block";
-    }, 200);
-});
+// rulBtn.addEventListener("click", ()=>{
+//     setTimeout(() => {
+//         ruleModal.style.display = "block";
+//     }, 200);
+// });
+
+
+
 
 let close = document.querySelector(".cross");
 close.addEventListener("click", ()=>{

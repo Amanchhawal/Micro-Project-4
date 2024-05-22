@@ -210,6 +210,7 @@ body{
     font-size: 21px;
     color: white;
     cursor: pointer;
+    z-index: 2;
 }
 .btn-next{
     padding: 8px 30px;
@@ -223,6 +224,7 @@ body{
     color: white;
     cursor: pointer;
     margin-left: 15px;
+    z-index: 2;
 
 }
 
@@ -238,10 +240,13 @@ body{
     background-color: #004429;
     color: white;
     display: none;
+    z-index: 2;
 
 }
 .rules{
     padding: 20px;
+    /* position: relative; */
+
 }
 
 .rules p{
